@@ -1,0 +1,219 @@
+@font-face {
+  src: url("../fonts/SortsMillGoudy-Regular.ttf");
+  font-family: "Sorts Mill Goudy", sans-serif;
+}
+.contact-holder {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+@media all and (min-width: 992px) {
+  .contact-holder {
+    width: 50%;
+  }
+}
+.contact-holder .cnt-info {
+  background: url(../img/footer.png) no-repeat center / cover;
+  width: 100%;
+  height: 280px;
+  position: relative;
+  color: white;
+}
+@media all and (min-width: 992px) {
+  .contact-holder .cnt-info {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0 80px;
+  }
+}
+.contact-holder .cnt-info:before {
+  content: "";
+  background: black;
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.contact-holder .cnt-info .txt-holder {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  width: 100%;
+}
+@media all and (min-width: 992px) {
+  .contact-holder .cnt-info .txt-holder {
+    padding: 10px 0 10px 30px;
+    width: auto;
+    text-align: left;
+  }
+}
+.contact-holder .cnt-info h3 {
+  font-size: 28px;
+  line-height: 36px;
+}
+@media all and (min-width: 992px) {
+  .contact-holder .cnt-info h3 {
+    font-size: 38px;
+  }
+}
+.contact-holder .cnt-info a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #296c8e;
+  width: auto;
+  font-size: 15px;
+  padding: 8px 20px 5px;
+  color: white;
+  display: block;
+  position: relative;
+  border: 1px solid white;
+}
+@media all and (min-width: 992px) {
+  .contact-holder .cnt-info a {
+    text-align: center;
+  }
+}
+.contact-holder .cnt-info a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: white;
+  left: 0;
+  top: 50%;
+}
+.contact-holder .cnt-info a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: white;
+  right: 0;
+  top: 50%;
+}
+.contact-holder .partners {
+  background: url("../img/partners.png") no-repeat center / cover;
+  width: 100%;
+  height: 280px;
+  position: relative;
+  color: white;
+}
+@media all and (min-width: 992px) {
+  .contact-holder .partners {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0 80px;
+  }
+}
+.contact-holder .partners:before {
+  content: "";
+  background: black;
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.contact-holder .partners .txt-holder {
+  position: absolute;
+  color: white;
+  width: 100%;
+  z-index: 2;
+  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+}
+@media all and (min-width: 992px) {
+  .contact-holder .partners .txt-holder {
+    padding: 10px 0 10px 30px;
+    width: auto;
+    text-align: left;
+  }
+}
+.contact-holder .partners .txt-holder p {
+  color: #e8e8e8;
+}
+.contact-holder .partners .txt-holder h3 {
+  font-size: 28px;
+  line-height: 36px;
+}
+.contact-holder .partners .txt-holder a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #296c8e;
+  width: auto;
+  font-size: 15px;
+  padding: 8px 20px 5px;
+  color: white;
+  display: block;
+  position: relative;
+  border: 1px solid white;
+}
+@media all and (min-width: 992px) {
+  .contact-holder .partners .txt-holder a {
+    text-align: center;
+  }
+}
+.contact-holder .partners .txt-holder a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: white;
+  left: 0;
+  top: 50%;
+}
+.contact-holder .partners .txt-holder a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: white;
+  right: 0;
+  top: 50%;
+}
+.contact-holder .tos-info {
+  position: relative;
+  text-align: center;
+  padding: 20px 20px;
+}
+@media all and (min-width: 992px) {
+  .contact-holder .tos-info {
+    display: none;
+  }
+}
+.contact-holder .tos-info ul {
+  display: block;
+}
+.contact-holder .tos-info ul li {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 20px;
+}
+.contact-holder .tos-info ul li:before {
+  content: "|";
+  margin: 0 10px;
+}
+.contact-holder .tos-info ul li:first-child:before {
+  display: none;
+}
+.contact-holder .tos-info ul li a {
+  text-decoration: none;
+  color: #505F67;
+}

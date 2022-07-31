@@ -1,0 +1,225 @@
+.admissions-slideout-holder {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 13;
+  visibility: hidden;
+
+  &.open {
+    visibility: visible;
+  }
+
+  @media all and (min-width: 992px) {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    width: 600px;
+  }
+
+  .overflow-content {
+    position: relative;
+    height: 100%;
+  }
+
+  .slideout-header {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 30px;
+
+    .close-btn {
+      position: relative;
+      border: 1px solid white;
+      width: 37px;
+      height: 37px;
+      opacity: 0.3;
+      cursor: pointer;
+      margin-right: 10px;
+
+      span {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        border: 1px solid white;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &:before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 10px;
+          height: 1px;
+          background: white;
+          left: 50%;
+          top: 50%;
+          transform: rotate(40deg);
+          margin-left: -5px;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 10px;
+          height: 1px;
+          background: white;
+          transform: rotate(135deg);
+          margin-left: -5px;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+      line-height: 40px;
+      color: white;
+
+      &:after {
+        content: "|";
+        margin: 0 10px;
+      }
+    }
+
+    p {
+      line-height: 40px;
+    }
+  }
+
+  .slideout-content {
+    .entry-content {
+      display: none;
+
+      &.selected {
+        display: block;
+      }
+    }
+
+    .video-holder {
+      cursor: pointer;
+      padding: 0 30px;
+      width: 100%;
+      height: 350px;
+      position: relative;
+
+      .video-wrap {
+        height: 350px;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 2;
+        }
+
+        h4 {
+          position: absolute;
+          color: white;
+          bottom: 0;
+          left: 10px;
+          font-size: 20px;
+          line-height: 40px;
+          z-index: 2;
+        }
+
+        .whole-link {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          text-indent: -9999px;
+
+          &:before {
+            content: "";
+            cursor: pointer;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: url("../img/play-icon.png");
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          background: rgba(0, 0, 0, 0.4);
+          opacity: 0.4;
+        }
+
+        &:after {
+          content: "";
+          border: 1px solid white;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          right: 5px;
+          bottom: 5px;
+          display: block;
+          z-index: 2;
+        }
+      }
+    }
+
+    .txt-holder {
+      padding: 30px;
+
+      p {
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+
+    .buttons-holder {
+      padding: 0 15px;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        background: #296c8e;
+        width: 180px;
+        font-size: 15px;
+        padding: 8px 20px 5px;
+        color: white;
+        position: relative;
+        border: 1px solid white;
+        margin-left: 15px;
+
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 10px;
+          height: 1px;
+          background: white;
+          left: 0;
+          top: 50%;
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 10px;
+          height: 1px;
+          background: white;
+          right: 0;
+          top: 50%;
+        }
+      }
+    }
+  }
+}

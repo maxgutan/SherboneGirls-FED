@@ -1,0 +1,198 @@
+.admissions-slideout-holder {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 13;
+  visibility: hidden;
+}
+.admissions-slideout-holder.open {
+  visibility: visible;
+}
+@media all and (min-width: 992px) {
+  .admissions-slideout-holder {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    width: 600px;
+  }
+}
+.admissions-slideout-holder .overflow-content {
+  position: relative;
+  height: 100%;
+}
+.admissions-slideout-holder .slideout-header {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 30px;
+}
+.admissions-slideout-holder .slideout-header .close-btn {
+  position: relative;
+  border: 1px solid white;
+  width: 37px;
+  height: 37px;
+  opacity: 0.3;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.admissions-slideout-holder .slideout-header .close-btn span {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.admissions-slideout-holder .slideout-header .close-btn span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 1px;
+  background: white;
+  left: 50%;
+  top: 50%;
+  transform: rotate(40deg);
+  margin-left: -5px;
+}
+.admissions-slideout-holder .slideout-header .close-btn span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 1px;
+  background: white;
+  transform: rotate(135deg);
+  margin-left: -5px;
+}
+.admissions-slideout-holder .slideout-header h2 {
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+}
+.admissions-slideout-holder .slideout-header h2:after {
+  content: "|";
+  margin: 0 10px;
+}
+.admissions-slideout-holder .slideout-header p {
+  line-height: 40px;
+}
+.admissions-slideout-holder .slideout-content .entry-content {
+  display: none;
+}
+.admissions-slideout-holder .slideout-content .entry-content.selected {
+  display: block;
+}
+.admissions-slideout-holder .slideout-content .video-holder {
+  cursor: pointer;
+  padding: 0 30px;
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+.admissions-slideout-holder .slideout-content .video-holder .video-wrap {
+  height: 350px;
+  position: relative;
+}
+.admissions-slideout-holder .slideout-content .video-holder .video-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+.admissions-slideout-holder .slideout-content .video-holder .video-wrap h4 {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 10px;
+  font-size: 20px;
+  line-height: 40px;
+  z-index: 2;
+}
+.admissions-slideout-holder .slideout-content .video-holder .video-wrap .whole-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  text-indent: -9999px;
+}
+.admissions-slideout-holder .slideout-content .video-holder .video-wrap .whole-link:before {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url("../img/play-icon.png");
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.admissions-slideout-holder .slideout-content .video-holder .video-wrap:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.4;
+}
+.admissions-slideout-holder .slideout-content .video-holder .video-wrap:after {
+  content: "";
+  border: 1px solid white;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  display: block;
+  z-index: 2;
+}
+.admissions-slideout-holder .slideout-content .txt-holder {
+  padding: 30px;
+}
+.admissions-slideout-holder .slideout-content .txt-holder p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.admissions-slideout-holder .slideout-content .buttons-holder {
+  padding: 0 15px;
+}
+.admissions-slideout-holder .slideout-content .buttons-holder a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #296c8e;
+  width: 180px;
+  font-size: 15px;
+  padding: 8px 20px 5px;
+  color: white;
+  position: relative;
+  border: 1px solid white;
+  margin-left: 15px;
+}
+.admissions-slideout-holder .slideout-content .buttons-holder a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: white;
+  left: 0;
+  top: 50%;
+}
+.admissions-slideout-holder .slideout-content .buttons-holder a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: white;
+  right: 0;
+  top: 50%;
+}
